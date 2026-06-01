@@ -32,3 +32,10 @@ spec:
     - port: 80
       targetPort: 80
       nodePort: 30080
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "64Mi"
+            limits:
+              cpu: "200m"
+              memory: "128Mi"

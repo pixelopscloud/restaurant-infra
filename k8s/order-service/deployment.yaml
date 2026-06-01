@@ -33,3 +33,10 @@ spec:
   ports:
     - port: 3003
       targetPort: 3003
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "64Mi"
+            limits:
+              cpu: "200m"
+              memory: "128Mi"
