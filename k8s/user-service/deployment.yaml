@@ -21,7 +21,13 @@ spec:
           env:
             - name: MONGO_URI
               value: mongodb://mongodb:27017/restaurant
-
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "64Mi"
+            limits:
+              cpu: "200m"
+              memory: "128Mi"
 ---
 apiVersion: v1
 kind: Service
@@ -33,10 +39,3 @@ spec:
   ports:
     - port: 3001
       targetPort: 3001
-          resources:
-            requests:
-              cpu: "50m"
-              memory: "64Mi"
-            limits:
-              cpu: "200m"
-              memory: "128Mi"
