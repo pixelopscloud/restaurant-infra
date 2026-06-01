@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: restaurant-app-frontend:latest
+          image: pixelopscloud/restaurant-app-frontend:b2809e9ea7d1c26b60ea394d6cd53c3c71f82d97
           imagePullPolicy: Never
           ports:
             - containerPort: 80

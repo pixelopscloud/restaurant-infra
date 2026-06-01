@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: user-service
-          image: restaurant-app-user-service:latest
+          image: pixelopscloud/restaurant-app-user-service:b2809e9ea7d1c26b60ea394d6cd53c3c71f82d97
           imagePullPolicy: Never
           ports:
             - containerPort: 3001
