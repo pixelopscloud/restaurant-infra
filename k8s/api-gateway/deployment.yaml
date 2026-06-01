@@ -15,7 +15,7 @@ spec:
       containers:
         - name: api-gateway
           image: pixelopscloud/restaurant-app-api-gateway:b2809e9ea7d1c26b60ea394d6cd53c3c71f82d97
-          imagePullPolicy: Never
+          imagePullPolicy: Always
           ports:
             - containerPort: 8000
 
